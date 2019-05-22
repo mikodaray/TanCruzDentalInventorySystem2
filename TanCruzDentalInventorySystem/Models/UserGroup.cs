@@ -8,7 +8,7 @@ namespace TanCruzDentalInventorySystem.Models
 {
     public class UserGroup
     {
-        public int UserGroupId { get; set; }
+        public string UserGroupId { get; set; }
         public string UserGroupName { get; set; }
         public string UserGroupDescription { get; set; }
         public string RowStatus { get; set; }
