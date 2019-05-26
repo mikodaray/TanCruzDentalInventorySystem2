@@ -10,18 +10,14 @@ namespace TanCruzDentalInventorySystem
 {
     public static class UnityConfig
     {
-        public static IUnityContainer Container { get; set; }
-
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
+            var container = new UnityContainer();
 
             // register all your components with the container here
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
-
-            
 
             container.RegisterType<IAccountService, AccountService>();
 
@@ -30,8 +26,6 @@ namespace TanCruzDentalInventorySystem
             container.RegisterType<IUnitOfWork, UnitOfWork>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
-
-            Container = container;
         }
     }
 }
