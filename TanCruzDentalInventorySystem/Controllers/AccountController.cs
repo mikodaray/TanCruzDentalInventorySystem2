@@ -30,7 +30,7 @@ namespace TanCruzDentalInventorySystem.Controllers
                 successful = _accountService.Login(loginInfo);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 successful = false;
             }
